@@ -10,7 +10,7 @@ weight: 4
 
 Bicep デプロイが完了したら、Azure ポータルを開いてリソース グループ内の初期 LocalBox リソースを確認できます。次のデプロイ フェーズを続行するには、_LocalBox-Client_ VM にリモート接続する必要があります。
 
-  ![リソース グループ内のデプロイ済みリソースを示すスクリーンショット](./deployed_resources.png)
+  ![リソース グループ内のデプロイ済みリソースを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/deployed_resources.png)
 
    > **注:** LocalBox のデプロイでは、RDP（3389）および SSH（22）ポートはデフォルトで開放されていません。VM にネットワーク アクセスするには、ポート 3389 を許可するネットワーク セキュリティ グループ（NSG）ルールを作成するか、[Azure Bastion](https://learn.microsoft.com/azure/bastion/bastion-overview) または [Just-in-Time（JIT）](https://learn.microsoft.com/azure/defender-for-cloud/just-in-time-access-usage?tabs=jit-config-asc%2Cjit-request-asc) アクセスを使用する必要があります。
 
@@ -34,23 +34,23 @@ _LocalBox-Client_ VM への接続にはいくつかの方法があり、デプ�
 
 - Azure ポータルで _LocalBox-NSG_ リソースを開き、「追加」をクリックして新しいルールを追加します。
 
-  ![RDP がブロックされた LocalBox-Client NSG を示すスクリーンショット](./rdp_nsg_blocked.png)
+  ![RDP がブロックされた LocalBox-Client NSG を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/rdp_nsg_blocked.png)
 
-  ![新しいインバウンド セキュリティ ルールの追加を示すスクリーンショット](./nsg_add_rule.png)
+  ![新しいインバウンド セキュリティ ルールの追加を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/nsg_add_rule.png)
 
 - 接続元の IP アドレスを指定し、サービスとして RDP を選択して、アクションを「許可」に設定します。パブリック IP アドレスは [https://icanhazip.com](https://icanhazip.com) または [https://whatismyip.com](https://whatismyip.com) で確認できます。
 
-  <img src="./nsg_add_rdp_rule.png" alt="RDP インバウンド許可ルール追加を示すスクリーンショット" width="400">
+  <img src="../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/nsg_add_rdp_rule.png" alt="RDP インバウンド許可ルール追加を示すスクリーンショット" width="400">
 
-  ![すべてのインバウンド セキュリティ ルールを示すスクリーンショット](./rdp_nsg_all_rules.png)
+  ![すべてのインバウンド セキュリティ ルールを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/rdp_nsg_all_rules.png)
 
-  ![RDP を使用した VM への接続を示すスクリーンショット](./rdp_connect.png)
+  ![RDP を使用した VM への接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/rdp_connect.png)
 
 ### Azure Bastion を使用して接続する
 
 - デプロイで Azure Bastion のデプロイを選択した場合は、それを使用して VM に接続します。
 
-  ![Bastion を使用した VM への接続を示すスクリーンショット](./bastion_connect.png)
+  ![Bastion を使用した VM への接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/bastion_connect.png)
 
   > **注:** Azure Bastion を使用する場合、デスクトップの背景画像は表示されません。そのため、Azure Bastion で _LocalBox-Client_ に接続している場合、このガイドの一部のスクリーンショットと表示が異なる場合があります。
 
@@ -60,17 +60,17 @@ _LocalBox-Client_ VM への接続にはいくつかの方法があり、デプ�
 
 - クライアント VM の構成ペインで Just-in-time を有効にします。これにより既定の設定が有効になります。
 
-  ![Microsoft Defender for Cloud ポータルでクライアント VM の RDP を許可するスクリーンショット](./jit_allowing_rdp.png)
+  ![Microsoft Defender for Cloud ポータルでクライアント VM の RDP を許可するスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/jit_allowing_rdp.png)
 
-  ![RDP を使用した VM への接続を示すスクリーンショット](./rdp_connect.png)
+  ![RDP を使用した VM への接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/rdp_connect.png)
 
-  ![JIT を使用した VM への接続を示すスクリーンショット](./jit_rdp_connect.png)
+  ![JIT を使用した VM への接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/jit_rdp_connect.png)
 
 ### ログオン スクリプト
 
 - _LocalBox-Client_ VM にログインすると、PowerShell スクリプトが開いて実行が開始されます。このスクリプトの完了には**約 4 ～ 5 時間**かかり、完了するとスクリプト ウィンドウは自動的に閉じます。Azure Local の更新プログラムが利用可能な場合は、推定デプロイ時間にさらに 1 時間追加する必要があります。この時点でインフラストラクチャのデプロイが完了します。
 
-  ![_LocalBox-Client_ を示すスクリーンショット](./automation.png)
+  ![_LocalBox-Client_ を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/automation.png)
 
 - Azure ポータルで、両方の Azure Local マシン（AzLHOST1 と AzLHOST2）が Arc 対応サーバーとして作成されていることを確認します。
 
@@ -84,8 +84,8 @@ _LocalBox-Client_ VM への接続にはいくつかの方法があり、デプ�
 
 LocalBox リソース グループでクラスター リソース `localboxcluster` を開き、`設定` -> `デプロイ` に移動して、すべての手順が正常に完了していることを確認します。
 
-  ![インスタンスのデプロイ進行状況を示すスクリーンショット](./cluster_deployment_complete.png)
+  ![インスタンスのデプロイ進行状況を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/cluster_deployment_complete.png)
 
 LocalBox インスタンスのデプロイが完了したら、さまざまな LocalBox の機能を探索し始めましょう。次の手順については [LocalBox の使用](../using_localbox/) ガイドに進んでください。
 
-  ![デプロイ済みインスタンスのスクリーンショット](./cluster_detail.png)
+  ![デプロイ済みインスタンスのスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/cloud_deployment/cluster_detail.png)

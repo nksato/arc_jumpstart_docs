@@ -31,7 +31,7 @@ ARM デプロイを送信する前に、必要な権限でユーザー アカウ
 - 「アクセス制御 (IAM)」をクリックし、「ロールの割り当ての追加」をクリックします
 - 「Key Vault 管理者」ロールを選択し、ユーザー アカウントを選択してロールを割り当てます
 
-  ![Key Vault 割り当てを示すスクリーンショット](./key_vault_rbac.png)
+  ![Key Vault 割り当てを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/key_vault_rbac.png)
 
 - この手順を繰り返して、LocalBox リソース グループに対して「ストレージ アカウント共同作成者」としてユーザー アカウントを追加します
 
@@ -47,23 +47,23 @@ ARM デプロイを送信する前に、必要な権限でユーザー アカウ
 - Azure ポータルに移動し、検索バーに「カスタム デプロイ」と入力します
 - 「カスタム テンプレートのデプロイ」を選択します
 
-  ![カスタム デプロイ オプションを示すスクリーンショット](./deploy_custom_template.png)
+  ![カスタム デプロイ オプションを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/deploy_custom_template.png)
 
 - 「エディターで独自のテンプレートを作成する」を選択します
 
-  ![独自テンプレートの作成オプションを示すスクリーンショット](./build_your_own_template.png)
+  ![独自テンプレートの作成オプションを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/build_your_own_template.png)
 
 - エディターに `azlocal.json` の内容を貼り付けて「保存」をクリックします
 
-  ![Azure ポータルの azlocal.json を示すスクリーンショット](./save_template.png)
+  ![Azure ポータルの azlocal.json を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/save_template.png)
 
 - 「パラメーターの編集」をクリックし、エディターに `azlocal.parameters.json` の内容を貼り付けて「保存」をクリックします
 
-  ![パラメーターの編集オプションを示すスクリーンショット](./edit_parameters.png)
+  ![パラメーターの編集オプションを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/edit_parameters.png)
 
 - 「作成」をクリックし、「確認と作成」をクリックしてインスタンス デプロイの検証フェーズを開始します
 
-  ![検証フェーズの開始を示すスクリーンショット](./validation_in_progress.png)
+  ![検証フェーズの開始を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/validation_in_progress.png)
 
 - 検証が完了するまで（約 20 分）進行状況を監視します
 
@@ -73,13 +73,13 @@ ARM デプロイを送信する前に、必要な権限でユーザー アカウ
 - バナーにインスタンスが検証済みでまだデプロイされていないことが表示されます
 - 「今すぐデプロイ」リンクをクリックします
 
-  ![Azure ポータルで検証済みインスタンス リソースを示すスクリーンショット](./validated_cluster_resource.png)
+  ![Azure ポータルで検証済みインスタンス リソースを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/validated_cluster_resource.png)
 
 - クリックしてデプロイを送信します
 - インスタンスのデプロイには 2 ～ 3 時間かかる場合があります
 - インスタンスの「デプロイ」タブで進行状況を監視します（最新の状態を取得するには「更新」をクリックします）
 
-  ![インスタンスのデプロイ進行状況を示すスクリーンショット](./cluster_deployment_progress.png)
+  ![インスタンスのデプロイ進行状況を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/cluster_deployment_progress.png)
 
 ## デプロイ完了の確認
 
@@ -87,11 +87,11 @@ ARM デプロイを送信する前に、必要な権限でユーザー アカウ
 - `設定` -> `デプロイ` に移動します
 - すべての手順が正常に完了していることを確認します
 
-  ![インスタンスのデプロイ進行状況を示すスクリーンショット](./cluster_deployment_complete.png)
+  ![インスタンスのデプロイ進行状況を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/cluster_deployment_complete.png)
 
 LocalBox インスタンスのデプロイが完了したら、さまざまな LocalBox の機能を探索し始めましょう。次の手順については [LocalBox の使用](../using_localbox/) ガイドに進んでください。
 
-  ![デプロイ済みインスタンスのスクリーンショット](./cluster_detail.png)
+  ![デプロイ済みインスタンスのスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/manual_deployment/cluster_detail.png)
 
 ## 手動デプロイのトラブルシューティング
 

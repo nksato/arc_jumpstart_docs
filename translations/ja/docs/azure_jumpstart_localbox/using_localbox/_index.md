@@ -14,7 +14,7 @@ LocalBox には、Azure ポータルから、または _LocalBox-Client_ 仮想�
 
 LocalBox は [Hyper-V のネスト仮想化](https://learn.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)を使用して、Azure Local の 2 ノード物理デプロイをシミュレートします。LocalBox で最高のエクスペリエンスを得るために、ソリューションを構成するさまざまなネスト VM の詳細を確認してください。
 
-  ![LocalBox ネスト仮想化スタック ダイアグラムのスクリーンショット](./nested_virtualization.png)
+  ![LocalBox ネスト仮想化スタック ダイアグラムのスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/nested_virtualization.png)
 
 | コンピューター名        | 役割                                | ドメイン参加 | 親ホスト          | OS                  |
 | ---------------- | ----------------------------------- | ------------- | --------------- | ------------------- |
@@ -37,15 +37,15 @@ Azure Local は [Azure Monitor](https://learn.microsoft.com/azure/azure-local/ma
 
 - インスタンスの「概要」ブレードを開き、プラットフォーム監視がデフォルトで利用可能であることを確認します。
 
-  ![Azure Monitor のプラットフォーム監視を示すスクリーンショット](./monitor_platform.png)
+  ![Azure Monitor のプラットフォーム監視を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/monitor_platform.png)
 
 - _LocalBox-Cluster_ リソースの「概要」ブレードから、「機能」タブを選択し、「Insights」をクリックして「はじめに」をクリックします。ウィザードに従って新しいデータ収集ルールとデータ収集エンドポイントを作成します。
 
-  ![機能タブを示すスクリーンショット](./create_dcr.png)
+  ![機能タブを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/create_dcr.png)
 
 - ログ データが Insights に流れるまでに時間がかかります。データが利用可能になったら、_LocalBox-Cluster_ リソースの「Insights」ブレードをクリックして Insights ブックを表示し、インスタンスのログを確認します。
 
-  ![ログが構成済みを示すスクリーンショット](./az_local_insights.png)
+  ![ログが構成済みを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/az_local_insights.png)
 
 ## Azure Local のアップグレード
 
@@ -55,7 +55,7 @@ LocalBox は、インストール メディアの最新利用可能バージョ�
 
 そうでない場合は、利用可能な更新プログラムを確認することをお勧めします。
 
-  ![インスタンスの更新を示すスクリーンショット](./cluster_updates.png)
+  ![インスタンスの更新を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/cluster_updates.png)
 
 _ステータス_ 列が _最新_ を示していない場合は、「1 回限りの更新」をクリックして更新プロセスをトリガーできます。
 
@@ -65,13 +65,13 @@ Azure Local の更新に関する詳細については、[製品ドキュメン�
 
 Azure Local は [Azure ポータルを通じた VM 管理](https://learn.microsoft.com/azure/azure-local/manage/azure-arc-vm-management-overview)をサポートしています。[LocalBox VM プロビジョニング ドキュメント](../RB/) を開いて始めてください。
 
-![VM プロビジョニング ブレードを示すスクリーンショット](./vm_provisioning.png)
+![VM プロビジョニング ブレードを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/vm_provisioning.png)
 
 ## Azure Kubernetes Service（AKS）
 
 LocalBox には [AKS enabled by Azure Arc](https://learn.microsoft.com/azure/aks/aksarc/aks-overview) が事前に構成されています。[Azure Local LocalBox 上の Azure Kubernetes Service ドキュメント](../AKS/) を開いて現在利用可能な機能を探索してください。
 
-![Azure Local 上の AKS を示すスクリーンショット](./cluster_detail.png)
+![Azure Local 上の AKS を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/cluster_detail.png)
 
 ## 高度な構成
 
@@ -79,7 +79,7 @@ LocalBox のデフォルト構成を変更したいユーザーもいるかも�
 
   > **注:** 高度な構成のデプロイは Jumpstart チームではサポートされていません。_LocalBox-Config.psd1_ ファイルへの変更により、LocalBox デプロイのいずれかの時点で失敗が発生する可能性があります。変更の影響を理解している場合にのみ、このファイルに変更を加えてください。
 
-![高度な構成ファイルを示すスクリーンショット](./advanced_config.png)
+![高度な構成ファイルを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/using_localbox/advanced_config.png)
 
 ## 次のステップ
 

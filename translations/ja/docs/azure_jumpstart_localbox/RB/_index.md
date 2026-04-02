@@ -13,19 +13,19 @@ Azure ポータルから Azure Local インスタンスに仮想マシンを作�
 
 - LocalBox リソース グループ内のインスタンス リソースに移動してクリックします。
 
-  ![インスタンス リソースを示すスクリーンショット](./az_local_cluster_rg.png)
+  ![インスタンス リソースを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/az_local_cluster_rg.png)
 
 - メニューの「VM イメージ」をクリックし、「VM イメージの追加」ドロップダウンをクリックして「Azure Marketplace から」を選択します。
 
-  ![VM の作成を示すスクリーンショット](./add_image_from_marketplace.png)
+  ![VM の作成を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/add_image_from_marketplace.png)
 
 - イメージの一覧からイメージを選択します。VM イメージに名前を付け、ドロップダウンからデフォルトのカスタム ロケーションを選択し、ストレージ パスは「自動的に選択」のままにします。準備ができたら「確認と作成」をクリックします。
 
-  ![VM イメージ詳細の作成を示すスクリーンショット](./create_vm_detail_win11.png)
+  ![VM イメージ詳細の作成を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/create_vm_detail_win11.png)
 
 - Azure Marketplace からインスタンスへの VM イメージのダウンロードには時間がかかります。リソース グループの VM イメージ リソースにアクセスしてリソースのプロパティを確認することで進行状況を監視できます。
 
-  ![VM イメージのプロパティのスクリーンショット](./monitor_vm_image_progress.png)
+  ![VM イメージのプロパティのスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/monitor_vm_image_progress.png)
 
 - ダウンロードが完了するまで必要に応じてイメージを監視します。待っている間に、インスタンスの論理ネットワークを作成する次のセクションに進みます。
 
@@ -46,39 +46,39 @@ LocalBox のネットワークには VLAN200 にタグ付けされた 192.168.20
 
 - 「実行」ボタンをクリックします：
 
-  ![Configure-VMLogicalNetwork.ps1 ファイルの実行方法を示すスクリーンショット](./run_with_powershell.png)
+  ![Configure-VMLogicalNetwork.ps1 ファイルの実行方法を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/run_with_powershell.png)
 
 - スクリプトが完了したら、リソース グループを確認して新しく作成された論理ネットワーク リソースを確認できます。
 
-  ![Azure ポータルの論理ネットワークを示すスクリーンショット](./logical_network.png)
+  ![Azure ポータルの論理ネットワークを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/logical_network.png)
 
 ## 仮想マシンを作成する
 
 - VM イメージ リソースを開いて、VM イメージのダウンロードが完了していることを確認します。
 
-  ![VM イメージ完了を示すスクリーンショット](./monitor_vm_image_available.png)
+  ![VM イメージ完了を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/monitor_vm_image_available.png)
 
 - Azure Local インスタンス リソースを開いて「仮想マシン」ブレードを開き、「仮想マシンの作成」ボタンをクリックします。
 
-  ![VM 作成の概要を示すスクリーンショット](./create_vm.png)
+  ![VM 作成の概要を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/create_vm.png)
 
 - LocalBox リソース グループを選択し、VM に名前を付け、セキュリティの種類に「Standard」を選択し、先ほど作成した VM イメージをイメージとして選択します。プロセッサ数を 2、メモリを 8192 に設定します。「次へ」をクリックし、もう一度「次へ」をクリックしてネットワーク タブに進みます。
 
-  ![VM 詳細の作成を示すスクリーンショット](./create_vm_detail_win11.png)
+  ![VM 詳細の作成を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/create_vm_detail_win11.png)
 
 - 「ネットワーク インターフェイスの追加」をクリックし、インターフェイスに名前を付けてドロップダウンから先ほど作成したネットワークを選択します。割り当て方法は「自動」のままにします。ネットワーク カードを追加してから「次へ」をクリックします。
 
-  ![VM ネットワーク カードの作成を示すスクリーンショット](./create_vm_detail_vnic.png)
+  ![VM ネットワーク カードの作成を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/create_vm_detail_vnic.png)
 
-  ![VM ネットワーク カードの作成を示すスクリーンショット](./create_vm_detail_add_vnic.png)
+  ![VM ネットワーク カードの作成を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/create_vm_detail_add_vnic.png)
 
 - 仮想マシンの詳細を確認し、準備ができたら「確認と作成」をクリックします。
 
-  ![VM 作成の最終ステップを示すスクリーンショット](./vm_image_review_create.png)
+  ![VM 作成の最終ステップを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/vm_image_review_create.png)
 
 - Azure Local VM リソースを開いて Arc への接続とその他の詳細を確認します。
 
-  ![VM リソースを示すスクリーンショット](./vm_resource_detail.png)
+  ![VM リソースを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/RB/vm_resource_detail.png)
 
 ## 次のステップ
 

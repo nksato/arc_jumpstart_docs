@@ -74,6 +74,6 @@ Pester テスト スイートには主に 2 つのテスト ファイルが含�
 | _C:\LocalBox\Logs\DeploymentStatus.log_    | _Invoke-Test.ps1 スクリプト_ からのログ出力 |
 | _C:\LocalBox\Logs\Tools.log_                  | ブートストラップ中のツール インストールからのログ出力。                                                                                       |
 
-  ![LocalBox-Client の LocalBox ログ フォルダーを示すスクリーンショット](./troubleshoot_logs.png)
+  ![LocalBox-Client の LocalBox ログ フォルダーを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/troubleshooting/troubleshoot_logs.png)
 
 それでも LocalBox のデプロイで問題が発生する場合は、GitHub に[イシューを送信](https://aka.ms/JumpstartIssue)し、問題の詳細な説明とデプロイ先の Azure リージョンを含めてください。_C:\LocalBox\Logs_ フォルダー内には、Jumpstart チームによるレビューのためにログを Azure ストレージ アカウントにアップロードする手順も記載されています。

@@ -10,24 +10,24 @@ Azure Local は [AKS enabled by Azure Arc](https://learn.microsoft.com/azure/aks
 
 - _LocalBox-Client_ VM でエクスプローラーを開き、C:\LocalBox フォルダーに移動します。_Configure-SQLManagedInstance.ps1_ ファイルを探して PowerShell で実行します。
 
-  ![SQLMI 構成スクリプトを示すスクリーンショット](./locate-sqlmi-script.png)
+  ![SQLMI 構成スクリプトを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/locate-sqlmi-script.png)
 
 - PowerShell 7 コマンドライン ウィンドウを開き、_C:\LocalBox\_ ディレクトリに移動して _$PSVersionTable_ コマンドを実行し PowerShell バージョンを確認します。
 
-  ![PowerShell バージョンを示すスクリーンショット](./localbox-powershell-version.png)
+  ![PowerShell バージョンを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/localbox-powershell-version.png)
 
 > [!IMPORTANT]
 > 次のコマンドを実行する前に、以前のセッションで _az connectedk8s proxy_ コマンドを使用して作成されたプロキシが実行中でないことを確認してください。実行中の場合、競合が発生してスクリプトが失敗します。プロキシを閉じてデフォルトのプロキシ ポートが解放されるまで数分待ってください。
 
 - コマンドラインで _Configure-SQLManagedInstance.ps1_ を実行し、手順に従って Azure にログインします。
 
-  ![SQLMI 構成スクリプトを示すスクリーンショット](./run-sqlmi-script.png)
+  ![SQLMI 構成スクリプトを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/run-sqlmi-script.png)
 
-  ![Azure へのログインを示すスクリーンショット](./sqlmi-azure-login.png)
+  ![Azure へのログインを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-azure-login.png)
 
-  ![Azure へのログインを示すスクリーンショット](./sqlmi-azure-login-code.png)
+  ![Azure へのログインを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-azure-login-code.png)
 
-  ![Azure へのログインを示すスクリーンショット](./sqlmi-azure-login-select-subscription.png)
+  ![Azure へのログインを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-azure-login-select-subscription.png)
 
 - スクリプトが完了するまで待ちます。約 20 分かかります。このスクリプトは Azure Local インスタンス上で以下を構成します。
 
@@ -45,9 +45,9 @@ Azure Local は [AKS enabled by Azure Arc](https://learn.microsoft.com/azure/aks
 
 - このスクリプトが完了したら、リソース グループを開いて種類でグループ化し、LocalBox でデプロイされた Azure Arc 対応 SQL Managed Instance を確認します。
 
-  ![リソース グループのクラスターを示すスクリーンショット](./sqlmi-resource.png)
+  ![リソース グループのクラスターを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-resource.png)
 
-  ![LocalBox クライアント デスクトップ ショートカットを示すスクリーンショット](./sqlmi-desktop-shortcuts.png)
+  ![LocalBox クライアント デスクトップ ショートカットを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-desktop-shortcuts.png)
 
 ## Azure Data Studio を使用した Azure Arc 対応 SQL Managed Instance への接続
 
@@ -55,17 +55,17 @@ Azure Data Studio は _LocalBox-Client_ コンピューターにインストー�
 
 - まず、_LocalBox-Client_ コンピューターのデスクトップにある Azure Data Studio ショートカットをクリックします。
 
-  ![Azure Data Studio ショートカットを示すスクリーンショット](./locate-data-studio.png)
+  ![Azure Data Studio ショートカットを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/locate-data-studio.png)
 
 - 事前に構成された接続に接続し、「サーバー証明書を信頼する」をクリックします。
 
-  ![SQL Managed Instance への接続を示すスクリーンショット](./connect-sqlmi.png)
+  ![SQL Managed Instance への接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/connect-sqlmi.png)
 
-  ![SQL Managed Instance への接続を示すスクリーンショット](./sqlmi-cert-warning.png)
+  ![SQL Managed Instance への接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-cert-warning.png)
 
 - 接続したら、サンプルの AdventureWorks データベースを参照できます。
 
-  ![サンプル AdventureWorks データベースへの接続を示すスクリーンショット](./sqlmi-adventureworks.png)
+  ![サンプル AdventureWorks データベースへの接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-adventureworks.png)
 
 ## Azure Arc 対応 SQL Managed Instance のストレス シミュレーション
 
@@ -73,13 +73,13 @@ LocalBox には、クライアント VM に自動的にインストールされ�
 
 - まず、SqlQueryStress デスクトップ ショートカットを開き、Arc 対応 SQL Managed Instance のプライマリ エンドポイント IP アドレスに接続します。これは作成されたデスクトップ ショートカット _SQLMI Endpoints_ テキスト ファイルに記載されています。
 
-  ![SQL Stress アプリケーションを示すスクリーンショット](./sql_stress_start.png)
+  ![SQL Stress アプリケーションを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sql_stress_start.png)
 
-  ![SQL Managed Instance エンドポイント ファイルを示すスクリーンショット](./sqlmi-endpoint_file.png)
+  ![SQL Managed Instance エンドポイント ファイルを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sqlmi-endpoint_file.png)
 
 - 接続には「SQL Server 認証」を使用し、SQLMI エンドポイント ファイルの資格情報を使用して、デプロイされたサンプル AdventureWorks2019 データベースを選択します（「テスト」ボタンで接続を確認できます）。テストが成功したら「OK」をクリックします。
 
-  ![SQL Managed Instance 接続を示すスクリーンショット](./sql_stress_connection.png)
+  ![SQL Managed Instance 接続を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sql_stress_connection.png)
 
 - 負荷を生成するには、単純なストアド プロシージャを実行します。以下のプロシージャをコピーし、実行するイテレーション数とスレッド数を変更してデータベースにさらに多くの負荷を生成します。さらに、ストアド プロシージャをしばらく実行できるようにクエリ間の遅延を 1 ms に変更します。「Go」をクリックして負荷の生成を開始します。
 
@@ -89,11 +89,11 @@ LocalBox には、クライアント VM に自動的にインストールされ�
 
 - 以下の例に示すように、構成設定は 100,000 イテレーション、1 イテレーション当たり 5 スレッド、クエリ間の遅延 1 ms です。これらの構成により、ストレス テストをしばらく実行し続けることができます。
 
-  ![SQLstress 実行を示すスクリーンショット](./sql_stress_running.png)
+  ![SQLstress 実行を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/sql_stress_running.png)
 
 - Azure Local インスタンスのパフォーマンスを監視するには、Insights ブックをクリックしてクラスターのログを確認します。
 
-    ![VM Insights ブックを示すスクリーンショット](./insights_workbook.png)
+    ![VM Insights ブックを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/SQLMI/insights_workbook.png)
 
 ## 次のステップ
 

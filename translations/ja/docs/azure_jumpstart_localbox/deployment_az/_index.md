@@ -73,7 +73,7 @@ LocalBox は Azure Bicep を使用して Azure サブスクリプションにデ
   az vm list-usage --location <your location> --output table
   ```
 
-  ![az vm list-usage を示すスクリーンショット](./az_vm_list_usage.png)
+  ![az vm list-usage を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/deployment_az/az_vm_list_usage.png)
 
 ## Bicep テンプレートのデプロイ
 
@@ -89,7 +89,7 @@ LocalBox は Azure Bicep を使用して Azure サブスクリプションにデ
   az ad sp list --display-name "Microsoft.AzureStackHCI Resource Provider"
   ```
 
-  ![Azure Local リソース プロバイダー ID の取得を示すスクリーンショット](./hci_rp_id.png)
+  ![Azure Local リソース プロバイダー ID の取得を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/deployment_az/hci_rp_id.png)
 
 > **注:** ```az ad sp list --display-name "Microsoft.AzureStackHCI Resource Provider"``` コマンドが空の配列を返す場合は、まず次のコマンドでプロバイダーを登録してください：```az provider register --namespace Microsoft.AzureStackHCI```
 
@@ -123,7 +123,7 @@ LocalBox は Azure Bicep を使用して Azure サブスクリプションにデ
 
 パラメーター ファイルの例：
 
-![パラメーターの例を示すスクリーンショット](./parameters_bicep.png)
+![パラメーターの例を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/deployment_az/parameters_bicep.png)
 
 - 新しいリソース グループを作成してから Bicep ファイルをデプロイします。ローカルにクローンした[デプロイ フォルダー](https://github.com/microsoft/azure_arc/tree/main/azure_jumpstart_localbox/bicep)に移動し、次のコマンドを実行します：
 
@@ -132,13 +132,13 @@ LocalBox は Azure Bicep を使用して Azure サブスクリプションにデ
   az deployment group create -g "<resource-group-name>" -f "main.bicep" -p "main.bicepparam"
   ```
 
-  ![Bicep デプロイ中を示すスクリーンショット](./bicep_deploying.png)
+  ![Bicep デプロイ中を示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/deployment_az/bicep_deploying.png)
 
 ## デプロイ後の自動化を開始する
 
 デプロイが完了したら、Azure ポータルを開いてリソース グループ内の初期 LocalBox リソースを確認できます。次のデプロイ フェーズを続行するには、*LocalBox-Client* VM にリモート接続する必要があります。次の手順については、[Azure ポータルでのインスタンスのデプロイ方法](../cloud_deployment/#azure-ポータルから-azure-local-インスタンスの検証とデプロイを行う)に進んでください。
 
-  ![リソース グループ内のデプロイ済みリソースを示すスクリーンショット](./deployed_resources.png)
+  ![リソース グループ内のデプロイ済みリソースを示すスクリーンショット](../../../../../translated_images/ja/azure_jumpstart_localbox/deployment_az/deployed_resources.png)
 
 ## デプロイのクリーンアップ
 
